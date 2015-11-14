@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({extended: true})); // support encoded bodies
 
 /* GET food listing. */
 router.get('/', function (req, res, next) {
-
     var keywords = req.query.keywords;
 
     // get search results each keywords in parallel
