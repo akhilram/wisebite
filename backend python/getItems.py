@@ -71,8 +71,9 @@ def main():
 	food_dict = {}
 	data_file = "C:\\Users\\LindaPulickal\\Desktop\\HACKSC\\nutrition_data_clean_jm.csv"
 	createFoodDcit(data_file, food_dict)
-	i
-	nput_string =  'HORMEL CANADIAN STYLE BACON'
+	
+	#food_dict = {'peanut':True, 'butter':True, 'peanut butter':True, 'peanut butter jelly':True, 'butter jelly':True, 'jelly mixed':True, 'mixed':True}
+	input_string =  'peanut butter jelly mixed'
 	response = extractFoodItems(input_string.lower().split(), food_dict)
 	print(response)
 
