@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "1c6310c5e16fe8daf1248ecb37dfa94d"
+build_time: [500847953, 118043000]
+inputs:
+  "/Users/arjunpola/Desktop/WiseBiteSwift/WiseBiteSwift/ViewController.swift": [500847949, 0]
+  "/Users/arjunpola/Desktop/WiseBiteSwift/WiseBiteSwift/AppDelegate.swift": [500847949, 0]

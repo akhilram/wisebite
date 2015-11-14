@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "64f1c6d600c18432ae6a390628a79e4d"
+build_time: [500850717, 234403000]
+inputs:
+  "/Users/arjunpola/Desktop/WiseBiteSwift/WiseBiteSwift WatchKit Extension/Search.swift": [500850713, 0]
+  "/Users/arjunpola/Desktop/WiseBiteSwift/WiseBiteSwift WatchKit Extension/InterfaceController.swift": [500850670, 0]
+  "/Users/arjunpola/Desktop/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ExtensionDelegate.swift": [500847950, 0]

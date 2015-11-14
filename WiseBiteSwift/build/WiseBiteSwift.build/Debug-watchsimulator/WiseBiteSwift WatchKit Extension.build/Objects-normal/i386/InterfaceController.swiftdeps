@@ -1,0 +1,140 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InterfaceController"
+provides-nominal:
+- "C32WiseBiteSwift_WatchKit_Extension19InterfaceController"
+provides-member:
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", ""]
+provides-dynamic-lookup:
+- "speak"
+- "awakeWithContext"
+- "contextForSegueWithIdentifier"
+- "didDeactivate"
+- "willActivate"
+depends-top-level:
+- !private "=="
+- "WKInterfaceController"
+- "String"
+- "InterfaceController"
+- "AnyObject"
+- !private "StringLiteralType"
+depends-member:
+- ["PSs9AnyObject", "awakeWithContext"]
+- ["PSs9AnyObject", "contextForSegueWithIdentifier"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "didDeactivate"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "pushControllerWithName"]
+- ["PSs9AnyObject", "speak"]
+- ["PSs9AnyObject", "willActivate"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- ["PSs11CVarArgType", "awakeWithContext"]
+- ["PSs11CVarArgType", "contextForSegueWithIdentifier"]
+- ["PSs11CVarArgType", "didDeactivate"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "pushControllerWithName"]
+- ["PSs11CVarArgType", "speak"]
+- ["PSs11CVarArgType", "willActivate"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "awakeWithContext"]
+- ["PSs23CustomStringConvertible", "contextForSegueWithIdentifier"]
+- ["PSs23CustomStringConvertible", "didDeactivate"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "pushControllerWithName"]
+- ["PSs23CustomStringConvertible", "speak"]
+- ["PSs23CustomStringConvertible", "willActivate"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "awakeWithContext"]
+- ["PSs9Equatable", "contextForSegueWithIdentifier"]
+- ["PSs9Equatable", "didDeactivate"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "pushControllerWithName"]
+- ["PSs9Equatable", "speak"]
+- ["PSs9Equatable", "willActivate"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "awakeWithContext"]
+- ["PSs8Hashable", "contextForSegueWithIdentifier"]
+- ["PSs8Hashable", "didDeactivate"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "pushControllerWithName"]
+- ["PSs8Hashable", "speak"]
+- ["PSs8Hashable", "willActivate"]
+- ["PSs8Hashable", ""]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "AnyObject"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "String"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "awakeWithContext"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "contextForSegueWithIdentifier"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "deinit"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "didDeactivate"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "init"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "pushControllerWithName"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "speak"]
+- ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", "willActivate"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "awakeWithContext"]
+- ["CSo8NSObject", "contextForSegueWithIdentifier"]
+- ["CSo8NSObject", "didDeactivate"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "pushControllerWithName"]
+- ["CSo8NSObject", "speak"]
+- ["CSo8NSObject", "willActivate"]
+- ["PSo16NSObjectProtocol", "awakeWithContext"]
+- ["PSo16NSObjectProtocol", "contextForSegueWithIdentifier"]
+- ["PSo16NSObjectProtocol", "didDeactivate"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "pushControllerWithName"]
+- ["PSo16NSObjectProtocol", "speak"]
+- ["PSo16NSObjectProtocol", "willActivate"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["SS", "deinit"]
+- ["CSo21WKInterfaceController", "AnyObject"]
+- ["CSo21WKInterfaceController", "String"]
+- ["CSo21WKInterfaceController", "awakeWithContext"]
+- ["CSo21WKInterfaceController", "contextForSegueWithIdentifier"]
+- ["CSo21WKInterfaceController", "didDeactivate"]
+- ["CSo21WKInterfaceController", "init"]
+- !private ["CSo21WKInterfaceController", "pushControllerWithName"]
+- ["CSo21WKInterfaceController", "speak"]
+- ["CSo21WKInterfaceController", "willActivate"]
+- ["CSo21WKInterfaceController", ""]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C32WiseBiteSwift_WatchKit_Extension19InterfaceController"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "SS"
+- "CSo21WKInterfaceController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/WatchKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreLocation.swiftmodule"
+interface-hash: "f330822003154a1a2d942f5ec2ec75bb"
