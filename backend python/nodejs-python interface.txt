@@ -1,0 +1,10 @@
+var spawn = require("child_process").spawn;
+var process = spawn('python',["path/to/getItems.py", voice_string_arg]);
+
+Then node can listen for data using:
+
+process.stdout.on('data', function (data){
+   // Do something with the data returned from python script
+});
+
+ref:  http://stackoverflow.com/questions/23450534/how-to-call-python-function-from-nodejs
