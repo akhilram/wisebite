@@ -503,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = usc.hacksc.WiseBiteSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -514,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = usc.hacksc.WiseBiteSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -536,6 +538,7 @@
 				192BDA881BF7D04E0002B1BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		192BDA8A1BF7D04E0002B1BA /* Build configuration list for PBXNativeTarget "WiseBiteSwift WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +547,7 @@
 				192BDA8C1BF7D04E0002B1BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		192BDA8E1BF7D04E0002B1BA /* Build configuration list for PBXNativeTarget "WiseBiteSwift" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +556,7 @@
 				192BDA901BF7D04E0002B1BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
