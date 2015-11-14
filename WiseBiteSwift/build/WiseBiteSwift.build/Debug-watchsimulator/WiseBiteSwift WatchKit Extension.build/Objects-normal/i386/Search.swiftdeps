@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", ""]
 provides-dynamic-lookup:
+- "awakeWithContext"
+- "getSearchResults"
 - "willActivate"
 - "didDeactivate"
 - "table"
-- "getSearchResults"
 - "displayInfo"
-- "awakeWithContext"
 depends-top-level:
+- !private "NSUTF8StringEncoding"
+- !private "NSError"
+- "WKInterfaceTable"
+- !private "Array"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- !private "NSJSONSerialization"
+- "WKInterfaceController"
+- !private "print"
 - !private "StringLiteralType"
 - "String"
 - "Search"
-- !private "NSUTF8StringEncoding"
-- "WKInterfaceController"
+- !private "Dictionary"
 - !private "+="
 - !private "ItemRowController"
-- !private "BooleanLiteralType"
-- !private "Array"
-- !private "Dictionary"
-- "WKInterfaceTable"
-- !private "print"
-- "AnyObject"
-- !private "NSJSONSerialization"
-- !private "NSError"
 depends-member:
 - !private ["PSs9AnyObject", "JSONObjectWithData"]
 - !private ["PSs9AnyObject", "NSJSONSerialization"]
