@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension17ExtensionDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "applicationWillResignActive"
 - "applicationDidFinishLaunching"
+- "applicationWillResignActive"
+- "applicationDidBecomeActive"
 depends-top-level:
-- "ExtensionDelegate"
 - "NSObject"
+- "ExtensionDelegate"
 - "WKExtensionDelegate"
 depends-member:
 - ["PSs9AnyObject", "applicationDidBecomeActive"]
