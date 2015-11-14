@@ -1,4 +1,5 @@
 import csv
+import sys
 
 def createFoodDcit(data_file, food_dict):	
 	"""This function populates a dictionary with the 'name' values from input csv. 
@@ -69,13 +70,15 @@ def extractFoodItems(input_string, food_dict):
 	
 def main():
 	food_dict = {}
-	data_file = "C:\\Users\\LindaPulickal\\Desktop\\HACKSC\\nutrition_data_clean_jm.csv"
+	data_file = "nutrition_data_clean_jm.csv"
 	createFoodDcit(data_file, food_dict)
 	
 	#food_dict = {'peanut':True, 'butter':True, 'peanut butter':True, 'peanut butter jelly':True, 'butter jelly':True, 'jelly mixed':True, 'mixed':True}
-	input_string =  'peanut butter jelly mixed'
+	input_string =  sys.argv[1]#'peanut butter jelly mixed'
 	response = extractFoodItems(input_string.lower().split(), food_dict)
-	print(response)
+	food_items = " " if response == None else ",".join(response)
+	print(food_items)
+	sys.stdout.flush()
 
 if __name__ == '__main__':
 	main()
