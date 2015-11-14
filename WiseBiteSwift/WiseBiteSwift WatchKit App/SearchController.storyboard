@@ -10,8 +10,24 @@
             <objects>
                 <controller identifier="Search" id="8PO-G6-HOW" customClass="Search" customModule="WiseBiteSwift_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Searching" id="Rvk-yS-yAR"/>
+                        <table alignment="left" id="sSD-Ro-nJi">
+                            <items>
+                                <tableRow identifier="ItemCell" id="ys9-Jz-SC8" customClass="ItemRowController" customModule="WiseBiteSwift_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="WiY-KF-jXU">
+                                        <items>
+                                            <label alignment="left" text="Label" id="OEG-lH-6kA"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="OEG-lH-6kA" id="Qu6-jV-bxw"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="sSD-Ro-nJi" id="nf5-lV-lBY"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="453" y="267"/>

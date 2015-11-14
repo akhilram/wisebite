@@ -112,12 +112,24 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension19InterfaceController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WKInterfaceLabel;
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension17ItemRowController")
+@interface ItemRowController : NSObject
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel * __null_unspecified label;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKInterfaceTable;
 
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension6Search")
 @interface Search : WKInterfaceController
+@property (nonatomic, weak) IBOutlet WKInterfaceTable * __null_unspecified table;
 - (void)awakeWithContext:(id __nullable)context;
 - (void)willActivate;
 - (void)didDeactivate;
+- (void)getSearchResults:(NSString * __nonnull)text;
+- (void)displayInfo:(NSString * __nonnull)results;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
