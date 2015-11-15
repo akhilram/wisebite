@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--ReportMulti-->
+        <scene sceneID="0Iz-F2-xXL">
+            <objects>
+                <controller identifier="ReportMulti" id="zWU-6O-T3t" customClass="ReportMultiController" customModule="WiseBiteSwift_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="ZoO-6b-QdV">
+                            <items>
+                                <tableRow identifier="ItemCell" selectable="NO" id="fLu-Du-y2E" customClass="ItemRow2Controller" customModule="WiseBiteSwift_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="smg-hf-bu9">
+                                        <items>
+                                            <label width="0.69999999999999996" alignment="left" text="Key" id="ZdF-vy-4Uj"/>
+                                            <label width="0.29999999999999999" height="19.5" alignment="left" text="Value" textAlignment="right" id="8oB-8e-9Qw"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="ZdF-vy-4Uj" id="c1G-TO-Baz"/>
+                                        <outlet property="value" destination="8oB-8e-9Qw" id="g8B-gn-aOr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="ZoO-6b-QdV" id="VUc-2w-J0K"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219" y="261"/>
+        </scene>
+    </scenes>
+</document>
