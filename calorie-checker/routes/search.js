@@ -20,7 +20,7 @@ router.get('/', function (req, res, next) {
     if (products.length == 1) {
         async.map(products, getSearchResults,
             function (error, results) {
-                res.send(results);
+                res.send({type: "search", results: results});
             });
     } else {
         // get search results each keywords in parallel
@@ -32,8 +32,8 @@ router.get('/', function (req, res, next) {
                 for (var i = 0; i < results.length; i++)
                     ndbNumbers.push(results[i][0].ndbno)
 
-                async.map(ndbNumbers, getFoodDetailsFromNDB, function (err, detail_results) {
-                    res.send(detail_results)
+                async.map(ndbNumbers, getFoodDetailsFromNDB, function (err, report) {
+                    res.send({type: "report", results: report});
                 });
             });
     }
