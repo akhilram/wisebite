@@ -45,7 +45,7 @@ function getProductsFromKeywords(keywords) {
     //    mode: 'text',
     //    pythonPath: 'python',
     //    pythonOptions: ['-u'],
-    //    scriptPath: './scripts/backend python',
+    //    scriptPath: 'scripts',
     //    args: [keywords]
     //};
     //

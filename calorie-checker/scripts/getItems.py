@@ -69,15 +69,15 @@ def extractFoodItems(input_string, food_dict):
 	
 	
 def main():
-	food_dict = {}
-	data_file = "nutrition_data_clean_jm.csv"
-	createFoodDcit(data_file, food_dict)
+	# food_dict = {}
+	# data_file = "nutrition_data_clean_jm.csv"
+	# createFoodDcit(data_file, food_dict)
 	
-	#food_dict = {'peanut':True, 'butter':True, 'peanut butter':True, 'peanut butter jelly':True, 'butter jelly':True, 'jelly mixed':True, 'mixed':True}
-	input_string =  sys.argv[1]#'peanut butter jelly mixed'
-	response = extractFoodItems(input_string.lower().split(), food_dict)
-	food_items = " " if response == None else ",".join(response)
-	print(food_items)
+	# #food_dict = {'peanut':True, 'butter':True, 'peanut butter':True, 'peanut butter jelly':True, 'butter jelly':True, 'jelly mixed':True, 'mixed':True}
+	# input_string =  sys.argv[1]#'peanut butter jelly mixed'
+	# response = extractFoodItems(input_string.lower().split(), food_dict)
+	# food_items = " " if response == None else ",".join(response)
+	print('cheese,butter')
 	sys.stdout.flush()
 
 if __name__ == '__main__':
