@@ -4,7 +4,6 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var async = require('async');
 var request = require('request');
-var pythonShell = require('python-shell');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({extended: true})); // support encoded bodies
@@ -15,8 +14,23 @@ router.get('/', function (req, res, next) {
     //keywords is a single query. Not to be mistaken for an array of keywords.
     var keywords = req.query.keywords;
 
-    var products = getProductsFromKeywords(keywords);
-    //check if the query is for single item of multiple items
+    resolveQueryAndProcessData(keywords, res);
+
+});
+
+function resolveQueryAndProcessData(keywords, res) {
+
+    var url = 'https://ancient-temple-5572.herokuapp.com/?key=' + keywords;
+
+    request(url, function (error, response, body) {
+        //console.log(body.split(","));
+        processProducts(body.split(",") ,res);
+    });
+}
+
+function processProducts(products, res) {
+
+    ////check if the query is for single item of multiple items
     if (products.length == 1) {
         async.map(products, getSearchResults,
             function (error, results) {
@@ -37,24 +51,6 @@ router.get('/', function (req, res, next) {
                 });
             });
     }
-});
-
-function getProductsFromKeywords(keywords) {
-
-    //var options = {
-    //    mode: 'text',
-    //    pythonPath: 'python',
-    //    pythonOptions: ['-u'],
-    //    scriptPath: 'scripts',
-    //    args: [keywords]
-    //};
-    //
-    //pythonShell.run('getItems.py', options, function (err, results) {
-    //    if (err) throw err;
-    //    return results.split(',');
-    //});
-    //return ['cheese'];
-    return ['cheese', 'butter'];
 }
 
 // callback to get food report
