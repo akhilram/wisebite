@@ -63,6 +63,24 @@ function getFoodDetailsFromNDB(ndb, callback) {
     var url = 'http://api.nal.usda.gov/ndb/reports/?ndbno=' + ndb + '&type=f&format=json&api_key=cK9v2xEPobkXTTEQNmvGN3ndRjuc0n6t4w2Psfj4';
     request(url, function (error, response, body) {
         body = JSON.parse(body);
+
+        var requiredNutrients = {
+            208:"Calorie",
+            203:"Protein",
+            204:"Total Fat",
+            291:"Total Fiber",
+            205:"Carbohydrates",
+            269:"Total Sugar"
+        };
+
+        var nutrients = [];
+
+        for (var i=0; i<body.report.food.nutrients.length; i++) {
+            if(body.report.food.nutrients[i].nutrient_id in requiredNutrients) {
+                nutrients.push(body.report.food.nutrients[i]);
+            }
+        }
+        body.report.food.nutrients = nutrients;
         callback(error, body);
     });
 }
