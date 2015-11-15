@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({extended: true})); // support encoded bodies
 
 /* GET food listing. */
 router.get('/', function (req, res, next) {
+
     var keywords = req.query.keywords;
 
     // get search results each keywords in parallel
@@ -31,5 +32,27 @@ function getFoodDetailsFromNDB(keyword, callback) {
         callback(error, body.list.item);
     });
 }
+
+router.get('/resolve:true', function (req, res, next) {
+
+    var voice_string = req.query.keywords;
+    var PythonShell = require('python-shell');
+    //var voice_string = "MILLET FLR";
+
+    var options = {
+        mode: 'text',
+        pythonPath: 'python',
+        pythonOptions: ['-u'],
+        scriptPath: '..\\backend python',
+        args: [voice_string]
+    };
+
+    PythonShell.run('getItems.py', options, function (err, results) {
+        if (err) throw err;
+        res.send(results);
+        // console.log('results: %j', results);
+    });
+
+});
 
 module.exports = router;
