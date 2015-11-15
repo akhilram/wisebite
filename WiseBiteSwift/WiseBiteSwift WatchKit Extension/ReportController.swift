@@ -12,9 +12,8 @@ import Foundation
 class ReportController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
-        if let report = context as? [String:String]{
-            print(report["name"], report["calorie"])
-        }
+        
+        print("Single Report")
     }
     
     override func willActivate() {

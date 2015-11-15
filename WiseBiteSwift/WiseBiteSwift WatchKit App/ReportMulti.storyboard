@@ -10,8 +10,26 @@
             <objects>
                 <controller identifier="ReportMulti" id="zWU-6O-T3t" customClass="ReportMultiController" customModule="WiseBiteSwift_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Multi Report" id="adS-b5-EEU"/>
+                        <table alignment="left" id="ZoO-6b-QdV">
+                            <items>
+                                <tableRow identifier="ItemCell" selectable="NO" id="fLu-Du-y2E" customClass="ItemRow2Controller" customModule="WiseBiteSwift_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="smg-hf-bu9">
+                                        <items>
+                                            <label width="0.69999999999999996" alignment="left" text="Key" id="ZdF-vy-4Uj"/>
+                                            <label width="0.29999999999999999" height="19.5" alignment="left" text="Value" textAlignment="right" id="8oB-8e-9Qw"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="ZdF-vy-4Uj" id="c1G-TO-Baz"/>
+                                        <outlet property="value" destination="8oB-8e-9Qw" id="g8B-gn-aOr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="ZoO-6b-QdV" id="VUc-2w-J0K"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="219" y="261"/>

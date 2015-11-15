@@ -117,6 +117,14 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension19InterfaceController")
 
 @class WKInterfaceLabel;
 
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension18ItemRow2Controller")
+@interface ItemRow2Controller : NSObject
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * __null_unspecified label;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * __null_unspecified value;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension17ItemRowController")
 @interface ItemRowController : NSObject
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel * __null_unspecified label;
@@ -133,9 +141,11 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension16ReportController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WKInterfaceTable;
 
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension21ReportMultiController")
 @interface ReportMultiController : WKInterfaceController
+@property (nonatomic, weak) IBOutlet WKInterfaceTable * __null_unspecified table;
 @property (nonatomic, copy) NSDictionary<NSNumber *, NSString *> * __nonnull contents;
 @property (nonatomic, copy) NSDictionary<NSNumber *, NSNumber *> * __nonnull totals;
 - (void)awakeWithContext:(id __nullable)context;
@@ -144,16 +154,19 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension21ReportMultiController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class WKInterfaceTable;
 
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension6Search")
 @interface Search : WKInterfaceController
+@property (nonatomic, strong) id __nonnull context;
 @property (nonatomic, weak) IBOutlet WKInterfaceTable * __null_unspecified table;
 - (void)awakeWithContext:(id __nullable)context;
 - (void)willActivate;
 - (void)didDeactivate;
 - (void)displayInfo:(id __nonnull)results;
 - (void)table:(WKInterfaceTable * __nonnull)table didSelectRowAtIndex:(NSInteger)rowIndex;
+- (void)performNavigation:(NSString * __nonnull)results;
+- (void)httpGet:(NSURLRequest * __null_unspecified)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)getSearchResults:(NSString * __nonnull)text;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

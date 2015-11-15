@@ -11,22 +11,18 @@ import Foundation
 
 class Search: WKInterfaceController {
     
+    var context :AnyObject = [];
+    
     @IBOutlet weak var table: WKInterfaceTable!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-//        self.getSearchResults("cheese");
-//        if let text = context as? String{
-////            
-//            getSearchResults(text);
-////            displayInfo("")
-//        }
-        self.displayInfo(context!);
-        // Configure interface objects here.
+        self.context = context!
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        self.displayInfo(self.context);
     }
     
     override func didDeactivate() {
@@ -55,7 +51,59 @@ class Search: WKInterfaceController {
         //TODO: Display Animation
         //TODO: Call API
         //TODO: Present Report
-        let response: [String:String] = ["name":"Cheese", "calorie":"100kCal"]
-        self.pushControllerWithName("Report", context: response)
+//        let response: [String:String] = ["name":"Cheese", "calorie":"100kCal"]
+//        self.pushControllerWithName("Report", context: response)
+        let row = table.rowControllerAtIndex(rowIndex) as! ItemRowController
+        print(row.ndbNo)
+        getSearchResults(String(row.ndbNo))
+    }
+    
+    
+    func performNavigation(results: String) {
+        do {
+            let data = results.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+            //print(data)
+            let jsonObject = try NSJSONSerialization.JSONObjectWithData(data, options: []) as AnyObject;
+            
+            self.pushControllerWithName("ReportMulti", context: jsonObject);
+        } catch let error as NSError {
+            print("Failed to load: \(error.localizedDescription)")
+        }
+    }
+    
+    
+    func httpGet(request: NSURLRequest!, callback: (String, String?) -> Void) {
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request){
+            (data, response, error) -> Void in
+            if error != nil {
+                callback("", error!.localizedDescription)
+            } else {
+                let result = NSString(data: data!, encoding:
+                    NSASCIIStringEncoding)!
+                callback(result as String, nil)
+            }
+        }
+        task.resume()
+    }
+    
+    func getSearchResults(text: String) {
+        
+        //Try for cheese
+        
+        let url = "https://calorie-checker.azurewebsites.net/lookup?ndb=";
+        let queryURL = url + text
+        print(queryURL)
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: queryURL)!)
+        httpGet(request){
+            (data, error) -> Void in
+            if error != nil {
+                print(error)
+            } else {
+                self.performNavigation(data)
+            }
+        }
+
     }
 }

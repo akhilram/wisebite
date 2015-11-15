@@ -6,41 +6,41 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension19InterfaceController", ""]
 provides-dynamic-lookup:
-- "getSearchResults"
-- "didDeactivate"
-- "performNavigation"
-- "awakeWithContext"
-- "willActivate"
 - "speak"
+- "getSearchResults"
 - "httpGet"
+- "willActivate"
+- "didDeactivate"
+- "awakeWithContext"
+- "performNavigation"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "Array"
-- !private "+"
-- "String"
-- !private "<"
 - !private "NSASCIIStringEncoding"
-- !private "NSUTF8StringEncoding"
-- "NSURLRequest"
-- !private "NSURL"
 - !private "NSMutableURLRequest"
-- !private "NSURLSession"
-- !private "=="
-- !private "++"
-- !private ">"
-- !private "NSString"
-- "Void"
-- !private "print"
-- !private "BooleanLiteralType"
-- "WKInterfaceController"
-- !private "UnicodeScalarType"
-- "AnyObject"
-- "InterfaceController"
-- "ExtendedGraphemeClusterType"
 - !private "!="
 - !private "NSJSONSerialization"
+- !private "<"
+- !private "NSURL"
+- "String"
+- !private "Array"
 - !private "NSCharacterSet"
+- "StringLiteralType"
+- !private "=="
+- "NSURLRequest"
+- !private "UnicodeScalarType"
+- "AnyObject"
+- !private "+"
+- !private "NSURLSession"
+- !private ">"
+- !private "print"
+- !private "NSUTF8StringEncoding"
+- "Void"
 - !private "NSError"
+- "WKInterfaceController"
+- "InterfaceController"
+- "ExtendedGraphemeClusterType"
+- !private "NSString"
+- !private "++"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["CSs12AnyGenerator", "Element"]
 - !private ["PSs9AnyObject", "Element"]
@@ -77,7 +77,6 @@ depends-member:
 - ["PSs9AnyObject", ""]
 - !private ["VSs11AnySequence", "Generator"]
 - !private ["VSs11AnySequence", "deinit"]
-- !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
@@ -143,7 +142,6 @@ depends-member:
 - !private ["VSS13CharacterView", "_Element"]
 - !private ["VSS13CharacterView", "deinit"]
 - !private ["VSS13CharacterView", "split"]
-- !private ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
@@ -158,7 +156,6 @@ depends-member:
 - !private ["PSs10Comparable", "dataUsingEncoding"]
 - !private ["PSs10Comparable", "init"]
 - !private ["PSs10Comparable", "stringByAddingPercentEncodingWithAllowedCharacters"]
-- !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
@@ -172,7 +169,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
-- !private ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
@@ -293,7 +289,6 @@ depends-member:
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["VVSS13CharacterView5Index", "Distance"]
-- !private ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
 - !private ["PSs9Indexable", "SubSequence"]
@@ -347,7 +342,6 @@ depends-member:
 - !private ["PSs14MirrorPathType", "dataUsingEncoding"]
 - !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs14MirrorPathType", "stringByAddingPercentEncodingWithAllowedCharacters"]
-- !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
@@ -355,7 +349,6 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "count"]
 - !private ["PSs21MutableCollectionType", "map"]
 - !private ["PSs21MutableCollectionType", "subscript"]
-- !private ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
@@ -363,7 +356,6 @@ depends-member:
 - !private ["PSs16MutableIndexable", "count"]
 - !private ["PSs16MutableIndexable", "map"]
 - !private ["PSs16MutableIndexable", "subscript"]
-- !private ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
@@ -484,7 +476,6 @@ depends-member:
 - !private ["PSs16OutputStreamType", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
@@ -569,7 +560,6 @@ depends-member:
 - ["CSo21WKInterfaceController", ""]
 - !private ["OSC15WKTextInputMode", "Plain"]
 - !private ["CSs17_AnyGeneratorBase", "Element"]
-- !private ["PSs10_ArrayType", "Element"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
@@ -600,7 +590,6 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs16_CocoaStringType", "stringByAddingPercentEncodingWithAllowedCharacters"]
-- !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
@@ -616,7 +605,6 @@ depends-member:
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
-- !private ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
@@ -634,7 +622,6 @@ depends-member:
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "Distance"]
-- !private ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]

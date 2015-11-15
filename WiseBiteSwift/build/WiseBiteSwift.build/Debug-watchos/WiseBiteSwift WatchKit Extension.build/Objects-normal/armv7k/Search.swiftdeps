@@ -6,43 +6,86 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", ""]
 provides-dynamic-lookup:
+- "context"
+- "willActivate"
 - "didDeactivate"
+- "getSearchResults"
 - "awakeWithContext"
 - "table"
 - "table"
-- "willActivate"
 - "displayInfo"
+- "performNavigation"
+- "httpGet"
 depends-top-level:
-- !private "+="
-- "WKInterfaceTable"
-- "AnyObject"
-- !private "ItemRowController"
 - "WKInterfaceController"
-- !private "Dictionary"
-- !private "String"
-- "Int"
-- !private "StringLiteralType"
+- !private "NSString"
+- !private "NSError"
+- !private "ItemRowController"
+- "AnyObject"
+- !private "+"
 - "Search"
+- !private "BooleanLiteralType"
+- !private "NSURLSession"
+- !private "NSMutableURLRequest"
+- "Void"
+- !private "NSJSONSerialization"
+- !private "NSURL"
+- "String"
+- !private "Dictionary"
+- "Array"
+- "Int"
+- "NSURLRequest"
+- "WKInterfaceTable"
+- !private "NSASCIIStringEncoding"
+- !private "+="
+- !private "print"
+- !private "!="
+- !private "StringLiteralType"
+- !private "NSUTF8StringEncoding"
 depends-member:
+- ["PSs9AnyObject", "Element"]
+- !private ["PSs9AnyObject", "JSONObjectWithData"]
+- !private ["PSs9AnyObject", "NSASCIIStringEncoding"]
+- !private ["PSs9AnyObject", "NSJSONSerialization"]
+- !private ["PSs9AnyObject", "NSMutableURLRequest"]
+- !private ["PSs9AnyObject", "NSString"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSURLSession"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "String"]
 - ["PSs9AnyObject", "awakeWithContext"]
+- ["PSs9AnyObject", "context"]
 - !private ["PSs9AnyObject", "count"]
+- !private ["PSs9AnyObject", "dataTaskWithRequest"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- ["PSs9AnyObject", "deinit"]
 - ["PSs9AnyObject", "didDeactivate"]
 - ["PSs9AnyObject", "displayInfo"]
+- ["PSs9AnyObject", "getSearchResults"]
+- ["PSs9AnyObject", "httpGet"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "label"]
+- !private ["PSs9AnyObject", "localizedDescription"]
 - !private ["PSs9AnyObject", "ndbNo"]
+- ["PSs9AnyObject", "performNavigation"]
+- !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "pushControllerWithName"]
+- !private ["PSs9AnyObject", "resume"]
 - !private ["PSs9AnyObject", "rowControllerAtIndex"]
 - !private ["PSs9AnyObject", "setNumberOfRows"]
 - !private ["PSs9AnyObject", "setText"]
+- !private ["PSs9AnyObject", "sharedSession"]
 - !private ["PSs9AnyObject", "subscript"]
 - ["PSs9AnyObject", "table"]
 - ["PSs9AnyObject", "willActivate"]
 - ["PSs9AnyObject", ""]
+- ["Sa", "Element"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
+- ["Sa", "deinit"]
+- ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
@@ -53,114 +96,206 @@ depends-member:
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11CVarArgType", "Distance"]
+- ["PSs11CVarArgType", "Element"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "JSONObjectWithData"]
+- !private ["PSs11CVarArgType", "NSASCIIStringEncoding"]
+- !private ["PSs11CVarArgType", "NSJSONSerialization"]
+- !private ["PSs11CVarArgType", "NSMutableURLRequest"]
+- !private ["PSs11CVarArgType", "NSString"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "NSURLSession"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "String"]
 - ["PSs11CVarArgType", "awakeWithContext"]
+- ["PSs11CVarArgType", "context"]
+- !private ["PSs11CVarArgType", "dataTaskWithRequest"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
 - ["PSs11CVarArgType", "didDeactivate"]
 - ["PSs11CVarArgType", "displayInfo"]
+- ["PSs11CVarArgType", "getSearchResults"]
+- ["PSs11CVarArgType", "httpGet"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "label"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
 - !private ["PSs11CVarArgType", "ndbNo"]
+- ["PSs11CVarArgType", "performNavigation"]
+- !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "pushControllerWithName"]
+- !private ["PSs11CVarArgType", "resume"]
 - !private ["PSs11CVarArgType", "rowControllerAtIndex"]
 - !private ["PSs11CVarArgType", "setNumberOfRows"]
 - !private ["PSs11CVarArgType", "setText"]
+- !private ["PSs11CVarArgType", "sharedSession"]
 - ["PSs11CVarArgType", "table"]
 - ["PSs11CVarArgType", "willActivate"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
-- !private ["PSs14CollectionType", "Key"]
 - !private ["PSs14CollectionType", "SubSequence"]
-- !private ["PSs14CollectionType", "Value"]
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
+- ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
+- ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "JSONObjectWithData"]
+- !private ["PSs23CustomStringConvertible", "NSASCIIStringEncoding"]
+- !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
+- !private ["PSs23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["PSs23CustomStringConvertible", "NSString"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "NSURLSession"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
-- !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "awakeWithContext"]
+- ["PSs23CustomStringConvertible", "context"]
+- !private ["PSs23CustomStringConvertible", "dataTaskWithRequest"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
 - ["PSs23CustomStringConvertible", "didDeactivate"]
 - ["PSs23CustomStringConvertible", "displayInfo"]
+- ["PSs23CustomStringConvertible", "getSearchResults"]
+- ["PSs23CustomStringConvertible", "httpGet"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "label"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - !private ["PSs23CustomStringConvertible", "ndbNo"]
+- ["PSs23CustomStringConvertible", "performNavigation"]
+- !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "pushControllerWithName"]
+- !private ["PSs23CustomStringConvertible", "resume"]
 - !private ["PSs23CustomStringConvertible", "rowControllerAtIndex"]
 - !private ["PSs23CustomStringConvertible", "setNumberOfRows"]
 - !private ["PSs23CustomStringConvertible", "setText"]
+- !private ["PSs23CustomStringConvertible", "sharedSession"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - ["PSs23CustomStringConvertible", "table"]
 - ["PSs23CustomStringConvertible", "willActivate"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["VSs10Dictionary", "Index"]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
 - !private ["VSs10Dictionary", "deinit"]
 - !private ["VSs10Dictionary", "subscript"]
 - !private ["PSs28DictionaryLiteralConvertible", "Index"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "Element"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "JSONObjectWithData"]
+- !private ["PSs9Equatable", "NSASCIIStringEncoding"]
+- !private ["PSs9Equatable", "NSJSONSerialization"]
+- !private ["PSs9Equatable", "NSMutableURLRequest"]
+- !private ["PSs9Equatable", "NSString"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "NSURLSession"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- !private ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "awakeWithContext"]
+- ["PSs9Equatable", "context"]
+- !private ["PSs9Equatable", "dataTaskWithRequest"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
 - ["PSs9Equatable", "didDeactivate"]
 - ["PSs9Equatable", "displayInfo"]
+- ["PSs9Equatable", "getSearchResults"]
+- ["PSs9Equatable", "httpGet"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "label"]
+- !private ["PSs9Equatable", "localizedDescription"]
 - !private ["PSs9Equatable", "ndbNo"]
+- ["PSs9Equatable", "performNavigation"]
+- !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "pushControllerWithName"]
+- !private ["PSs9Equatable", "resume"]
 - !private ["PSs9Equatable", "rowControllerAtIndex"]
 - !private ["PSs9Equatable", "setNumberOfRows"]
 - !private ["PSs9Equatable", "setText"]
+- !private ["PSs9Equatable", "sharedSession"]
 - ["PSs9Equatable", "table"]
 - ["PSs9Equatable", "willActivate"]
 - ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "Element"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "JSONObjectWithData"]
+- !private ["PSs8Hashable", "NSASCIIStringEncoding"]
+- !private ["PSs8Hashable", "NSJSONSerialization"]
+- !private ["PSs8Hashable", "NSMutableURLRequest"]
+- !private ["PSs8Hashable", "NSString"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "NSURLSession"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "awakeWithContext"]
+- ["PSs8Hashable", "context"]
+- !private ["PSs8Hashable", "dataTaskWithRequest"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
 - ["PSs8Hashable", "didDeactivate"]
 - ["PSs8Hashable", "displayInfo"]
+- ["PSs8Hashable", "getSearchResults"]
+- ["PSs8Hashable", "httpGet"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "label"]
+- !private ["PSs8Hashable", "localizedDescription"]
 - !private ["PSs8Hashable", "ndbNo"]
+- ["PSs8Hashable", "performNavigation"]
+- !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "pushControllerWithName"]
+- !private ["PSs8Hashable", "resume"]
 - !private ["PSs8Hashable", "rowControllerAtIndex"]
 - !private ["PSs8Hashable", "setNumberOfRows"]
 - !private ["PSs8Hashable", "setText"]
+- !private ["PSs8Hashable", "sharedSession"]
 - ["PSs8Hashable", "table"]
 - ["PSs8Hashable", "willActivate"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
+- ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
-- !private ["PSs9Indexable", "Key"]
 - !private ["PSs9Indexable", "SubSequence"]
-- !private ["PSs9Indexable", "Value"]
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
@@ -171,81 +306,178 @@ depends-member:
 - !private ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "ndbNo"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
+- ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "_Element"]
+- ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Element"]
+- ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
+- ["CSo7NSArray", "Element"]
+- ["PSo8NSCoding", "Element"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- ["PSo9NSCopying", "Element"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["CSo7NSError", "localizedDescription"]
+- ["PSo17NSFastEnumeration", "Element"]
+- !private ["VSC20NSJSONReadingOptions", "Element"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- ["PSo16NSMutableCopying", "Element"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo19NSMutableURLRequest", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "Dictionary"]
+- ["CSo8NSObject", "Element"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "ItemRowController"]
-- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- !private ["CSo8NSObject", "NSASCIIStringEncoding"]
+- !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSJSONSerialization"]
+- !private ["CSo8NSObject", "NSMutableURLRequest"]
+- !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSURL"]
+- ["CSo8NSObject", "NSURLRequest"]
+- !private ["CSo8NSObject", "NSURLSession"]
+- !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "WKInterfaceTable"]
 - ["CSo8NSObject", "awakeWithContext"]
+- ["CSo8NSObject", "context"]
+- !private ["CSo8NSObject", "dataTaskWithRequest"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
 - ["CSo8NSObject", "didDeactivate"]
 - ["CSo8NSObject", "displayInfo"]
+- ["CSo8NSObject", "getSearchResults"]
+- ["CSo8NSObject", "httpGet"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "ndbNo"]
+- ["CSo8NSObject", "performNavigation"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushControllerWithName"]
+- !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "rowControllerAtIndex"]
 - !private ["CSo8NSObject", "setNumberOfRows"]
 - !private ["CSo8NSObject", "setText"]
+- !private ["CSo8NSObject", "sharedSession"]
 - ["CSo8NSObject", "table"]
 - ["CSo8NSObject", "willActivate"]
+- ["PSo16NSObjectProtocol", "Element"]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "NSASCIIStringEncoding"]
+- !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
+- !private ["PSo16NSObjectProtocol", "NSString"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "NSURLSession"]
+- !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - ["PSo16NSObjectProtocol", "awakeWithContext"]
+- ["PSo16NSObjectProtocol", "context"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
 - ["PSo16NSObjectProtocol", "didDeactivate"]
 - ["PSo16NSObjectProtocol", "displayInfo"]
+- ["PSo16NSObjectProtocol", "getSearchResults"]
+- ["PSo16NSObjectProtocol", "httpGet"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "ndbNo"]
+- ["PSo16NSObjectProtocol", "performNavigation"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushControllerWithName"]
+- !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "rowControllerAtIndex"]
 - !private ["PSo16NSObjectProtocol", "setNumberOfRows"]
 - !private ["PSo16NSObjectProtocol", "setText"]
+- !private ["PSo16NSObjectProtocol", "sharedSession"]
 - ["PSo16NSObjectProtocol", "table"]
 - ["PSo16NSObjectProtocol", "willActivate"]
 - ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "Element"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["CSo12NSURLSession", "dataTaskWithRequest"]
+- !private ["CSo12NSURLSession", "sharedSession"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "resume"]
 - !private ["PSs21NilLiteralConvertible", "count"]
+- !private ["PSs13OptionSetType", "Element"]
 - !private ["Sq", "count"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs16RawRepresentable", "Element"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "AnyObject"]
 - !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "Dictionary"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "Int"]
 - !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "ItemRowController"]
-- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "String"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSASCIIStringEncoding"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSError"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSJSONSerialization"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSMutableURLRequest"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSString"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSURL"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSURLRequest"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSURLSession"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "NSUTF8StringEncoding"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "String"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "Void"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "WKInterfaceTable"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "awakeWithContext"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "context"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "deinit"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "didDeactivate"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "displayInfo"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "getSearchResults"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "httpGet"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "init"]
+- ["C32WiseBiteSwift_WatchKit_Extension6Search", "performNavigation"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "print"]
 - !private ["C32WiseBiteSwift_WatchKit_Extension6Search", "pushControllerWithName"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "table"]
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", "willActivate"]
-- !private ["PSs12SequenceType", "Element"]
+- ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
-- !private ["PSs12SequenceType", "Key"]
 - !private ["PSs12SequenceType", "SubSequence"]
-- !private ["PSs12SequenceType", "Value"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Element"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs16SignedNumberType", "Distance"]
@@ -254,18 +486,50 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "dataUsingEncoding"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["CSo21WKInterfaceController", "AnyObject"]
 - !private ["CSo21WKInterfaceController", "Dictionary"]
 - ["CSo21WKInterfaceController", "Int"]
 - !private ["CSo21WKInterfaceController", "ItemRowController"]
-- !private ["CSo21WKInterfaceController", "String"]
+- !private ["CSo21WKInterfaceController", "NSASCIIStringEncoding"]
+- !private ["CSo21WKInterfaceController", "NSError"]
+- !private ["CSo21WKInterfaceController", "NSJSONSerialization"]
+- !private ["CSo21WKInterfaceController", "NSMutableURLRequest"]
+- !private ["CSo21WKInterfaceController", "NSString"]
+- !private ["CSo21WKInterfaceController", "NSURL"]
+- ["CSo21WKInterfaceController", "NSURLRequest"]
+- !private ["CSo21WKInterfaceController", "NSURLSession"]
+- !private ["CSo21WKInterfaceController", "NSUTF8StringEncoding"]
+- ["CSo21WKInterfaceController", "String"]
+- ["CSo21WKInterfaceController", "Void"]
 - ["CSo21WKInterfaceController", "WKInterfaceTable"]
 - ["CSo21WKInterfaceController", "awakeWithContext"]
+- ["CSo21WKInterfaceController", "context"]
 - ["CSo21WKInterfaceController", "didDeactivate"]
 - ["CSo21WKInterfaceController", "displayInfo"]
+- ["CSo21WKInterfaceController", "getSearchResults"]
+- ["CSo21WKInterfaceController", "httpGet"]
 - ["CSo21WKInterfaceController", "init"]
+- ["CSo21WKInterfaceController", "performNavigation"]
+- !private ["CSo21WKInterfaceController", "print"]
 - !private ["CSo21WKInterfaceController", "pushControllerWithName"]
 - ["CSo21WKInterfaceController", "table"]
 - ["CSo21WKInterfaceController", "willActivate"]
@@ -276,16 +540,30 @@ depends-member:
 - !private ["CSo17WKInterfaceObject", "setText"]
 - !private ["CSo16WKInterfaceTable", "rowControllerAtIndex"]
 - !private ["CSo16WKInterfaceTable", "setNumberOfRows"]
+- ["PSs10_ArrayType", "Element"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "init"]
+- ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
@@ -293,25 +571,30 @@ depends-member:
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "Distance"]
+- ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Key"]
 - !private ["PSs12_Reflectable", "SubSequence"]
-- !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
@@ -319,65 +602,115 @@ depends-member:
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
 depends-nominal:
 - "PSs9AnyObject"
-- !private "Sa"
-- !private "PSs23ArrayLiteralConvertible"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
 - !private "VSs10ArraySlice"
 - !private "PSs22BidirectionalIndexType"
 - !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - "PSs11CVarArgType"
-- !private "PSs14CollectionType"
+- !private "VSs9Character"
+- "PSs14CollectionType"
 - !private "PSs10Comparable"
-- !private "PSs28CustomDebugStringConvertible"
+- "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - !private "VSs10Dictionary"
 - !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
 - "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "SQ"
-- !private "PSs9Indexable"
+- "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
 - !private "C32WiseBiteSwift_WatchKit_Extension17ItemRowController"
 - !private "PSs14MirrorPathType"
-- !private "PSs21MutableCollectionType"
-- !private "PSs16MutableIndexable"
-- !private "PSs16MutableSliceable"
-- !private "PSo9NSCopying"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "CSo7NSArray"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo7NSError"
+- "PSo17NSFastEnumeration"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- "PSo16NSMutableCopying"
+- !private "CSo19NSMutableURLRequest"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLRequest"
+- !private "CSo12NSURLSession"
+- !private "CSo20NSURLSessionDataTask"
+- !private "CSo16NSURLSessionTask"
 - !private "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
 - !private "Sq"
+- !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
-- !private "PSs30RangeReplaceableCollectionType"
+- "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
 - "C32WiseBiteSwift_WatchKit_Extension6Search"
-- !private "PSs12SequenceType"
+- "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
+- !private "PSs10Streamable"
 - !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
 - "CSo21WKInterfaceController"
 - !private "CSo16WKInterfaceLabel"
 - !private "CSo17WKInterfaceObject"
 - !private "CSo16WKInterfaceTable"
-- !private "PSs10_ArrayType"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"
-- !private "PSs21_ObjectiveCBridgeable"
+- "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
 - !private "PSs22_RandomAccessAmbiguity"
-- !private "PSs12_Reflectable"
+- "PSs12_Reflectable"
 - !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
 depends-dynamic-lookup:
-- !private "subscript"
 - !private "count"
+- !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/WatchKit.swiftmodule"
@@ -388,4 +721,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreLocation.swiftmodule"
-interface-hash: "bb6c00ac4a8d433f55ac2a09e60bde25"
+interface-hash: "7153d7dad73e81c67a87607582d52572"

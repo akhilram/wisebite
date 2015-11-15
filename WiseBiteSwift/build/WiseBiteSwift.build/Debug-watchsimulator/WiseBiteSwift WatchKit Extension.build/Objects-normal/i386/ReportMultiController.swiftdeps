@@ -7,18 +7,18 @@ provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", ""]
 provides-dynamic-lookup:
 - "totals"
-- "awakeWithContext"
+- "willActivate"
 - "didDeactivate"
 - "contents"
-- "willActivate"
+- "awakeWithContext"
 depends-top-level:
-- "Int"
-- "Dictionary"
-- "String"
 - "StringLiteralType"
-- "AnyObject"
-- "ReportMultiController"
 - "WKInterfaceController"
+- "ReportMultiController"
+- "AnyObject"
+- "String"
+- "Dictionary"
+- "Int"
 depends-member:
 - ["PSs9AnyObject", "awakeWithContext"]
 - ["PSs9AnyObject", "contents"]

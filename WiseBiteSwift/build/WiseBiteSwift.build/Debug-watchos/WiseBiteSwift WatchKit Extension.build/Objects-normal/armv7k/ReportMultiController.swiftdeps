@@ -6,128 +6,443 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", ""]
 provides-dynamic-lookup:
-- "awakeWithContext"
-- "totals"
 - "contents"
+- "table"
 - "didDeactivate"
+- "awakeWithContext"
 - "willActivate"
+- "totals"
 depends-top-level:
-- "StringLiteralType"
-- "AnyObject"
-- "Int"
+- "ReportMultiController"
+- !private "!="
+- !private "ItemRow2Controller"
 - "String"
 - "Dictionary"
+- "WKInterfaceTable"
+- "AnyObject"
+- "StringLiteralType"
+- !private "&&"
+- !private "+="
+- !private "print"
 - "WKInterfaceController"
-- "ReportMultiController"
+- "Int"
+- !private "+"
 depends-member:
+- !private ["PSs9AnyObject", "String"]
 - ["PSs9AnyObject", "awakeWithContext"]
 - ["PSs9AnyObject", "contents"]
 - ["PSs9AnyObject", "didDeactivate"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "label"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "rowControllerAtIndex"]
+- !private ["PSs9AnyObject", "setNumberOfRows"]
+- !private ["PSs9AnyObject", "setText"]
+- !private ["PSs9AnyObject", "subscript"]
+- ["PSs9AnyObject", "table"]
 - ["PSs9AnyObject", "totals"]
+- !private ["PSs9AnyObject", "value"]
 - ["PSs9AnyObject", "willActivate"]
 - ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "deinit"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "String"]
 - ["PSs11CVarArgType", "awakeWithContext"]
 - ["PSs11CVarArgType", "contents"]
 - ["PSs11CVarArgType", "didDeactivate"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "label"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "rowControllerAtIndex"]
+- !private ["PSs11CVarArgType", "setNumberOfRows"]
+- !private ["PSs11CVarArgType", "setText"]
+- ["PSs11CVarArgType", "table"]
 - ["PSs11CVarArgType", "totals"]
+- !private ["PSs11CVarArgType", "value"]
 - ["PSs11CVarArgType", "willActivate"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
 - ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
 - ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
 - ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "String"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
 - ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "awakeWithContext"]
 - ["PSs23CustomStringConvertible", "contents"]
 - ["PSs23CustomStringConvertible", "didDeactivate"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "label"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "rowControllerAtIndex"]
+- !private ["PSs23CustomStringConvertible", "setNumberOfRows"]
+- !private ["PSs23CustomStringConvertible", "setText"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "table"]
 - ["PSs23CustomStringConvertible", "totals"]
+- !private ["PSs23CustomStringConvertible", "value"]
 - ["PSs23CustomStringConvertible", "willActivate"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Generator"]
+- !private ["VSs10Dictionary", "Index"]
 - ["VSs10Dictionary", "Key"]
 - ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["VSs19DictionaryGenerator", "Element"]
+- !private ["PSs28DictionaryLiteralConvertible", "Generator"]
+- !private ["PSs28DictionaryLiteralConvertible", "Index"]
 - ["PSs28DictionaryLiteralConvertible", "Key"]
 - ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "awakeWithContext"]
 - ["PSs9Equatable", "contents"]
 - ["PSs9Equatable", "didDeactivate"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "label"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "rowControllerAtIndex"]
+- !private ["PSs9Equatable", "setNumberOfRows"]
+- !private ["PSs9Equatable", "setText"]
+- ["PSs9Equatable", "table"]
 - ["PSs9Equatable", "totals"]
+- !private ["PSs9Equatable", "value"]
 - ["PSs9Equatable", "willActivate"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "awakeWithContext"]
 - ["PSs8Hashable", "contents"]
 - ["PSs8Hashable", "didDeactivate"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "label"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "rowControllerAtIndex"]
+- !private ["PSs8Hashable", "setNumberOfRows"]
+- !private ["PSs8Hashable", "setText"]
+- ["PSs8Hashable", "table"]
 - ["PSs8Hashable", "totals"]
+- !private ["PSs8Hashable", "value"]
 - ["PSs8Hashable", "willActivate"]
 - ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
 - ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
 - ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension18ItemRow2Controller", "label"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension18ItemRow2Controller", "value"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSo9NSCopying", "deinit"]
 - ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Dictionary"]
 - ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "ItemRow2Controller"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "WKInterfaceTable"]
 - ["CSo8NSObject", "awakeWithContext"]
 - ["CSo8NSObject", "contents"]
 - ["CSo8NSObject", "didDeactivate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "rowControllerAtIndex"]
+- !private ["CSo8NSObject", "setNumberOfRows"]
+- !private ["CSo8NSObject", "setText"]
+- ["CSo8NSObject", "table"]
 - ["CSo8NSObject", "totals"]
+- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "willActivate"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - ["PSo16NSObjectProtocol", "awakeWithContext"]
 - ["PSo16NSObjectProtocol", "contents"]
 - ["PSo16NSObjectProtocol", "didDeactivate"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "rowControllerAtIndex"]
+- !private ["PSo16NSObjectProtocol", "setNumberOfRows"]
+- !private ["PSo16NSObjectProtocol", "setText"]
+- ["PSo16NSObjectProtocol", "table"]
 - ["PSo16NSObjectProtocol", "totals"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "willActivate"]
 - ["PSo16NSObjectProtocol", ""]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "AnyObject"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "Dictionary"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "Int"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "ItemRow2Controller"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "String"]
+- ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "WKInterfaceTable"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "awakeWithContext"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "contents"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "deinit"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "didDeactivate"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "init"]
+- !private ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "print"]
+- ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "table"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "totals"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "willActivate"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
 - ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
 - ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["CSo21WKInterfaceController", "AnyObject"]
+- !private ["CSo21WKInterfaceController", "Dictionary"]
 - ["CSo21WKInterfaceController", "Int"]
+- !private ["CSo21WKInterfaceController", "ItemRow2Controller"]
 - ["CSo21WKInterfaceController", "String"]
+- ["CSo21WKInterfaceController", "WKInterfaceTable"]
 - ["CSo21WKInterfaceController", "awakeWithContext"]
 - ["CSo21WKInterfaceController", "contents"]
 - ["CSo21WKInterfaceController", "didDeactivate"]
 - ["CSo21WKInterfaceController", "init"]
+- !private ["CSo21WKInterfaceController", "print"]
+- ["CSo21WKInterfaceController", "table"]
 - ["CSo21WKInterfaceController", "totals"]
 - ["CSo21WKInterfaceController", "willActivate"]
 - ["CSo21WKInterfaceController", ""]
+- !private ["CSo16WKInterfaceLabel", "setText"]
+- !private ["CSo17WKInterfaceObject", "rowControllerAtIndex"]
+- !private ["CSo17WKInterfaceObject", "setNumberOfRows"]
+- !private ["CSo17WKInterfaceObject", "setText"]
+- !private ["CSo16WKInterfaceTable", "rowControllerAtIndex"]
+- !private ["CSo16WKInterfaceTable", "setNumberOfRows"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - ["PSs12_Reflectable", "Key"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
 - ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
 depends-nominal:
 - "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - "PSs11CVarArgType"
 - "PSs14CollectionType"
+- !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "VSs10Dictionary"
+- !private "VSs19DictionaryGenerator"
 - "PSs28DictionaryLiteralConvertible"
 - "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
 - "PSs8Hashable"
+- !private "SQ"
 - "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C32WiseBiteSwift_WatchKit_Extension18ItemRow2Controller"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
 - "C32WiseBiteSwift_WatchKit_Extension21ReportMultiController"
 - "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
 - "CSo21WKInterfaceController"
+- !private "CSo16WKInterfaceLabel"
+- !private "CSo17WKInterfaceObject"
+- !private "CSo16WKInterfaceTable"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
 - "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
 - "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
 depends-dynamic-lookup:
+- !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/WatchKit.swiftmodule"
@@ -138,4 +453,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreLocation.swiftmodule"
-interface-hash: "18b7a360e6933782880f1a0b2a4decc1"
+interface-hash: "fa2c79bd7cb08514e49517142e0e7f3e"

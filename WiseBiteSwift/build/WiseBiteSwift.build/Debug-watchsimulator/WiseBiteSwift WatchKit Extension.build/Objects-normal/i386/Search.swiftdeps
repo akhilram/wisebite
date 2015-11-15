@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension6Search", ""]
 provides-dynamic-lookup:
+- "displayInfo"
+- "didDeactivate"
 - "table"
 - "table"
 - "willActivate"
-- "didDeactivate"
-- "displayInfo"
 - "awakeWithContext"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "+="
-- "WKInterfaceController"
-- "Search"
-- "AnyObject"
-- !private "ItemRowController"
-- "Int"
 - !private "Dictionary"
 - !private "String"
+- "WKInterfaceController"
+- "Int"
+- !private "ItemRowController"
+- "Search"
+- !private "StringLiteralType"
+- "AnyObject"
 - "WKInterfaceTable"
+- !private "+="
 depends-member:
 - ["PSs9AnyObject", "awakeWithContext"]
 - !private ["PSs9AnyObject", "count"]

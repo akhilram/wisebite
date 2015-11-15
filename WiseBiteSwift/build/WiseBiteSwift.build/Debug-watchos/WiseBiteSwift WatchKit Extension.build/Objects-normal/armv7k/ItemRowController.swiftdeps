@@ -9,11 +9,11 @@ provides-dynamic-lookup:
 - "label"
 - "ndbNo"
 depends-top-level:
-- "String"
 - "NSObject"
 - "StringLiteralType"
-- "ItemRowController"
 - "WKInterfaceLabel"
+- "String"
+- "ItemRowController"
 depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "label"]

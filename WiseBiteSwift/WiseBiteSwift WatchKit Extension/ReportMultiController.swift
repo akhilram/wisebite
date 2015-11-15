@@ -11,6 +11,8 @@ import Foundation
 
 class ReportMultiController: WKInterfaceController {
     
+    @IBOutlet weak var table: WKInterfaceTable!
+    
     var contents: [Int:String] = [
         208:"Calorie",
         203:"Protein",
@@ -30,29 +32,39 @@ class ReportMultiController: WKInterfaceController {
     ]
     
     override func awakeWithContext(context: AnyObject?) {
-//        if let report = context as? [AnyObject]{
-//            
-//            for item in report as! [Dictionary<String, AnyObject>]
-//            {
-//                //print(item["report"]!["food"]!!["name"]!)
-//                for nutrients in item["report"]!["food"]!!["nutrients"] as! [AnyObject]{
-//                    
-//                    if let id = (nutrients["nutrient_id"] as? Int){
-//                        if totals[id] != nil {
-//                            totals[id] = totals[id]! + (nutrients["value"] as! Int)
-//                        }
-//                    }
-//                }
-//            }
-//            
-//            print(totals)
-//            
-//        }
+        if let report = context as? [AnyObject]{
+            
+            for item in report as! [Dictionary<String, AnyObject>]
+            {
+                print(item["report"]!["food"]!!["name"]!)
+                for nutrients in item["report"]!["food"]!!["nutrients"] as! [AnyObject]{
+                    
+                    if let id = (nutrients["nutrient_id"] as? Int){
+                        if totals[id] != nil {
+                            totals[id] = totals[id]! + (nutrients["value"] as! Int)
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        table.setNumberOfRows(6, withRowType: "ItemCell");
+        var index = 0;
+        for (key, val) in totals {
+            
+            let controller = table.rowControllerAtIndex(index) as! ItemRow2Controller
+            if contents[key] != nil && String(val) != nil{
+                controller.label.setText(contents[key]!)
+                controller.value.setText(String(val))
+                index += 1
+            }
+        }
+
     }
     
     override func didDeactivate() {

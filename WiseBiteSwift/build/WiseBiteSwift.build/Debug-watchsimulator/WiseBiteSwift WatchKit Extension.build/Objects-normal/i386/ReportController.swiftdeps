@@ -7,15 +7,15 @@ provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension16ReportController", ""]
 provides-dynamic-lookup:
 - "didDeactivate"
-- "willActivate"
 - "awakeWithContext"
+- "willActivate"
 depends-top-level:
 - !private "StringLiteralType"
-- !private "String"
-- "AnyObject"
 - "ReportController"
-- "WKInterfaceController"
 - !private "print"
+- "WKInterfaceController"
+- "AnyObject"
+- !private "String"
 depends-member:
 - ["PSs9AnyObject", "awakeWithContext"]
 - ["PSs9AnyObject", "didDeactivate"]

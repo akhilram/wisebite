@@ -1,10 +1,10 @@
 version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
 options: "fd837ac589e00be7e002a688eedadc17"
-build_time: [500883332, 448482000]
+build_time: [500887623, 690864000]
 inputs:
-  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/Search.swift": [500871098, 0]
-  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ReportController.swift": [500871098, 0]
-  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ReportMultiController.swift": [500883293, 0]
-  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ExtensionDelegate.swift": [500847950, 0]
-  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/InterfaceController.swift": [500883328, 0]
-  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ItemRowController.swift": [500871098, 0]
+  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ItemRowController.swift": [500887165, 0]
+  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/InterfaceController.swift": [500887165, 0]
+  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ReportController.swift": [500887165, 0]
+  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ReportMultiController.swift": [500887606, 0]
+  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/Search.swift": [500887165, 0]
+  "/Users/arjunpola/Desktop/wisebite_repo/WiseBiteSwift/WiseBiteSwift WatchKit Extension/ExtensionDelegate.swift": [500887161, 0]

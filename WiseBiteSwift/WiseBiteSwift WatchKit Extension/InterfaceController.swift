@@ -30,7 +30,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func speak() {
     
-        self.presentTextInputControllerWithSuggestions(["Peanut Butter and Bread"], allowedInputMode: .Plain, completion: { (answers) -> Void in
+        self.presentTextInputControllerWithSuggestions(nil, allowedInputMode: .Plain, completion: { (answers) -> Void in
             if (answers != nil) {
                 if(answers!.count > 0){
                     if let answer = answers![0] as? String {
@@ -48,7 +48,7 @@ class InterfaceController: WKInterfaceController {
     func performNavigation(results: String) {
         do {
             let data = results.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-            print(data)
+            //print(data)
             let jsonObject = try NSJSONSerialization.JSONObjectWithData(data, options: []) as AnyObject;
             
             if let json = jsonObject["type"] as? String{
@@ -74,7 +74,7 @@ class InterfaceController: WKInterfaceController {
         let words = text.characters.split{$0 == " "}.map(String.init)
         
         for(var i = 0; i < words.count; i++){
-            if i != 1 {
+            if i != 0 {
                 finalEscapedQuery = finalEscapedQuery + "%20" + words[i].stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
             }
             else{
@@ -84,6 +84,7 @@ class InterfaceController: WKInterfaceController {
         
         
         let queryURL = url + finalEscapedQuery
+        print(queryURL)
         let request = NSMutableURLRequest(URL: NSURL(string: queryURL)!)
 
         httpGet(request){

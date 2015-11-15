@@ -22,6 +22,7 @@
 		192BDA921BF7D2560002B1BA /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192BDA911BF7D2560002B1BA /* Search.swift */; };
 		192BDA941BF7D4F20002B1BA /* SearchController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192BDA931BF7D4F20002B1BA /* SearchController.storyboard */; };
 		192BDA9E1BF7F0200002B1BA /* ItemRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192BDA9D1BF7F0200002B1BA /* ItemRowController.swift */; };
+		193ABA271BF8738C00FA4739 /* ItemRow2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193ABA261BF8738C00FA4739 /* ItemRow2Controller.swift */; };
 		19F31F4E1BF823A70088E193 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F31F4D1BF823A70088E193 /* ReportController.swift */; };
 		19F31F501BF823BC0088E193 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F31F4F1BF823BC0088E193 /* Report.storyboard */; };
 		19F31F521BF826E40088E193 /* ReportMultiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F31F511BF826E40088E193 /* ReportMultiController.swift */; };
@@ -90,6 +91,7 @@
 		192BDA911BF7D2560002B1BA /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		192BDA931BF7D4F20002B1BA /* SearchController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchController.storyboard; sourceTree = "<group>"; };
 		192BDA9D1BF7F0200002B1BA /* ItemRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRowController.swift; sourceTree = "<group>"; };
+		193ABA261BF8738C00FA4739 /* ItemRow2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow2Controller.swift; sourceTree = "<group>"; };
 		19F31F4D1BF823A70088E193 /* ReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
 		19F31F4F1BF823BC0088E193 /* Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		19F31F511BF826E40088E193 /* ReportMultiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMultiController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				192BDA7F1BF7D04E0002B1BA /* ExtensionDelegate.swift */,
 				19F31F4D1BF823A70088E193 /* ReportController.swift */,
 				19F31F511BF826E40088E193 /* ReportMultiController.swift */,
+				193ABA261BF8738C00FA4739 /* ItemRow2Controller.swift */,
 				192BDA811BF7D04E0002B1BA /* Assets.xcassets */,
 				192BDA831BF7D04E0002B1BA /* Info.plist */,
 			);
@@ -324,6 +327,7 @@
 			files = (
 				192BDA921BF7D2560002B1BA /* Search.swift in Sources */,
 				19F31F521BF826E40088E193 /* ReportMultiController.swift in Sources */,
+				193ABA271BF8738C00FA4739 /* ItemRow2Controller.swift in Sources */,
 				192BDA9E1BF7F0200002B1BA /* ItemRowController.swift in Sources */,
 				192BDA801BF7D04E0002B1BA /* ExtensionDelegate.swift in Sources */,
 				192BDA7E1BF7D04E0002B1BA /* InterfaceController.swift in Sources */,
