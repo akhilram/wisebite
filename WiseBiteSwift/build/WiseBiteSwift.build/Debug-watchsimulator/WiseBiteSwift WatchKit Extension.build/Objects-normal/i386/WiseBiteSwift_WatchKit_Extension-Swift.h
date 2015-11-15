@@ -101,14 +101,17 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension17ExtensionDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSURLRequest;
 
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension19InterfaceController")
 @interface InterfaceController : WKInterfaceController
 - (void)awakeWithContext:(id __nullable)context;
 - (void)willActivate;
 - (void)didDeactivate;
-- (id __nullable)contextForSegueWithIdentifier:(NSString * __nonnull)segueIdentifier;
 - (IBAction)speak;
+- (void)performNavigation:(NSString * __nonnull)results;
+- (void)getSearchResults:(NSString * __nonnull)text;
+- (void)httpGet:(NSURLRequest * __null_unspecified)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -117,6 +120,25 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension19InterfaceController")
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension17ItemRowController")
 @interface ItemRowController : NSObject
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel * __null_unspecified label;
+@property (nonatomic, copy) NSString * __nonnull ndbNo;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension16ReportController")
+@interface ReportController : WKInterfaceController
+- (void)awakeWithContext:(id __nullable)context;
+- (void)willActivate;
+- (void)didDeactivate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension21ReportMultiController")
+@interface ReportMultiController : WKInterfaceController
+- (void)awakeWithContext:(id __nullable)context;
+- (void)willActivate;
+- (void)didDeactivate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -128,8 +150,8 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension6Search")
 - (void)awakeWithContext:(id __nullable)context;
 - (void)willActivate;
 - (void)didDeactivate;
-- (void)getSearchResults:(NSString * __nonnull)text;
-- (void)displayInfo:(NSString * __nonnull)results;
+- (void)displayInfo:(id __nonnull)results;
+- (void)table:(WKInterfaceTable * __nonnull)table didSelectRowAtIndex:(NSInteger)rowIndex;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

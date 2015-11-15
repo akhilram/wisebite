@@ -7,36 +7,49 @@ provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", ""]
 provides-dynamic-lookup:
 - "label"
+- "ndbNo"
 depends-top-level:
 - "NSObject"
+- "StringLiteralType"
 - "WKInterfaceLabel"
 - "ItemRowController"
+- "String"
 depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "label"]
+- ["PSs9AnyObject", "ndbNo"]
 - ["PSs9AnyObject", ""]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "label"]
+- ["PSs11CVarArgType", "ndbNo"]
 - ["PSs11CVarArgType", ""]
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "label"]
+- ["PSs23CustomStringConvertible", "ndbNo"]
 - ["PSs23CustomStringConvertible", ""]
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "label"]
+- ["PSs9Equatable", "ndbNo"]
 - ["PSs9Equatable", ""]
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "label"]
+- ["PSs8Hashable", "ndbNo"]
 - ["PSs8Hashable", ""]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "String"]
 - ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "WKInterfaceLabel"]
 - ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "deinit"]
 - ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "init"]
 - ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "label"]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "ndbNo"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "WKInterfaceLabel"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "label"]
+- ["CSo8NSObject", "ndbNo"]
 - ["CSo8NSObject", ""]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "label"]
+- ["PSo16NSObjectProtocol", "ndbNo"]
 - ["PSo16NSObjectProtocol", ""]
 depends-nominal:
 - "PSs9AnyObject"
@@ -58,4 +71,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreLocation.swiftmodule"
-interface-hash: "170f77d9a9edfb9c1ba464b3713711eb"
+interface-hash: "e5d9ac3d91717d96e9e7297f7a62033e"

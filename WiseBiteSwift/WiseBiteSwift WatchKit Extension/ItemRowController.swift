@@ -11,4 +11,5 @@ import WatchKit
 
 class ItemRowController : NSObject {
   @IBOutlet weak var label: WKInterfaceLabel!
+    var ndbNo:String = "";
 }
