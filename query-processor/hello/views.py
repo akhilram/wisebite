@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import getItems as GI
+import hello.getItems as GI
 import os
 
 from .models import Greeting
