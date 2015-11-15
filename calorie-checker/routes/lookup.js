@@ -14,7 +14,9 @@ router.get('/', function (req, res, next) {
     //use ndb to get the details of the product.
     getFoodDetailsFromNDB(ndb, function (err, result) {
         if (!err) {
-            res.send(result);
+            var results = [];
+            results.push(result);
+            res.send(results);
         }
         else {
             console.log("Error in querying using NDB");
