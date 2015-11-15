@@ -7,22 +7,22 @@ provides-member:
 - ["C13WiseBiteSwift11AppDelegate", ""]
 provides-dynamic-lookup:
 - "applicationWillEnterForeground"
-- "application"
-- "window"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
 - "applicationWillTerminate"
-- "applicationWillResignActive"
+- "window"
+- "application"
 - "applicationDidEnterBackground"
 depends-top-level:
-- "Bool"
-- "AnyObject"
-- !private "BooleanLiteralType"
-- "UIApplicationDelegate"
-- "UIResponder"
-- "UIApplication"
-- "AppDelegate"
 - "NSObject"
+- "UIResponder"
+- "AppDelegate"
 - "UIWindow"
+- "UIApplication"
+- "AnyObject"
+- "UIApplicationDelegate"
+- !private "BooleanLiteralType"
+- "Bool"
 depends-member:
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]

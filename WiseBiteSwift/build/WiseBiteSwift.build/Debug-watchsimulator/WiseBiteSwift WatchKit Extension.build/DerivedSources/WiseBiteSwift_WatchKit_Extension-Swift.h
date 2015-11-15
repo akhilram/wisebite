@@ -136,6 +136,8 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension16ReportController")
 
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension21ReportMultiController")
 @interface ReportMultiController : WKInterfaceController
+@property (nonatomic, copy) NSDictionary<NSNumber *, NSString *> * __nonnull contents;
+@property (nonatomic, copy) NSDictionary<NSNumber *, NSNumber *> * __nonnull totals;
 - (void)awakeWithContext:(id __nullable)context;
 - (void)willActivate;
 - (void)didDeactivate;

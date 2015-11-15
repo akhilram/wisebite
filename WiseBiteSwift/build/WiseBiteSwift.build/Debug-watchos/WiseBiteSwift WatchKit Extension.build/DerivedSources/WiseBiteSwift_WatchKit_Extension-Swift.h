@@ -101,6 +101,7 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension17ExtensionDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSURLRequest;
 
 SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension19InterfaceController")
 @interface InterfaceController : WKInterfaceController
@@ -108,6 +109,51 @@ SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension19InterfaceController")
 - (void)willActivate;
 - (void)didDeactivate;
 - (IBAction)speak;
+- (void)performNavigation:(NSString * __nonnull)results;
+- (void)getSearchResults:(NSString * __nonnull)text;
+- (void)httpGet:(NSURLRequest * __null_unspecified)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKInterfaceLabel;
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension17ItemRowController")
+@interface ItemRowController : NSObject
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel * __null_unspecified label;
+@property (nonatomic, copy) NSString * __nonnull ndbNo;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension16ReportController")
+@interface ReportController : WKInterfaceController
+- (void)awakeWithContext:(id __nullable)context;
+- (void)willActivate;
+- (void)didDeactivate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension21ReportMultiController")
+@interface ReportMultiController : WKInterfaceController
+@property (nonatomic, copy) NSDictionary<NSNumber *, NSString *> * __nonnull contents;
+@property (nonatomic, copy) NSDictionary<NSNumber *, NSNumber *> * __nonnull totals;
+- (void)awakeWithContext:(id __nullable)context;
+- (void)willActivate;
+- (void)didDeactivate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKInterfaceTable;
+
+SWIFT_CLASS("_TtC32WiseBiteSwift_WatchKit_Extension6Search")
+@interface Search : WKInterfaceController
+@property (nonatomic, weak) IBOutlet WKInterfaceTable * __null_unspecified table;
+- (void)awakeWithContext:(id __nullable)context;
+- (void)willActivate;
+- (void)didDeactivate;
+- (void)displayInfo:(id __nonnull)results;
+- (void)table:(WKInterfaceTable * __nonnull)table didSelectRowAtIndex:(NSInteger)rowIndex;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

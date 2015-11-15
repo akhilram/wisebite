@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WiseBiteSwift WatchKit Extension/InterfaceController.swift"
-            timestampString = "469249221.802905"
+            filePath = "WiseBiteSwift WatchKit Extension/Search.swift"
+            timestampString = "469234208.399018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "speak()"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "awakeWithContext(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WiseBiteSwift WatchKit Extension/Search.swift"
-            timestampString = "469234208.399018"
+            filePath = "WiseBiteSwift WatchKit Extension/InterfaceController.swift"
+            timestampString = "469260937.254338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "awakeWithContext(_:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "performNavigation(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiseBiteSwift WatchKit Extension/InterfaceController.swift"
+            timestampString = "469260937.254338"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "performNavigation(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
