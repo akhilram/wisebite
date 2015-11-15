@@ -6,83 +6,126 @@ provides-nominal:
 provides-member:
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", ""]
 provides-dynamic-lookup:
+- "totals"
 - "awakeWithContext"
-- "willActivate"
 - "didDeactivate"
+- "contents"
+- "willActivate"
 depends-top-level:
-- !private "String"
-- "ReportMultiController"
+- "Int"
+- "Dictionary"
+- "String"
+- "StringLiteralType"
 - "AnyObject"
+- "ReportMultiController"
 - "WKInterfaceController"
 depends-member:
 - ["PSs9AnyObject", "awakeWithContext"]
+- ["PSs9AnyObject", "contents"]
 - ["PSs9AnyObject", "didDeactivate"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "totals"]
 - ["PSs9AnyObject", "willActivate"]
 - ["PSs9AnyObject", ""]
 - ["PSs11CVarArgType", "awakeWithContext"]
+- ["PSs11CVarArgType", "contents"]
 - ["PSs11CVarArgType", "didDeactivate"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "totals"]
 - ["PSs11CVarArgType", "willActivate"]
 - ["PSs11CVarArgType", ""]
-- ["PSs28CustomDebugStringConvertible", "Some"]
+- ["PSs14CollectionType", "Key"]
+- ["PSs14CollectionType", "Value"]
+- ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "Value"]
+- ["PSs23CustomStringConvertible", "Key"]
+- ["PSs23CustomStringConvertible", "Value"]
 - ["PSs23CustomStringConvertible", "awakeWithContext"]
+- ["PSs23CustomStringConvertible", "contents"]
 - ["PSs23CustomStringConvertible", "didDeactivate"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "totals"]
 - ["PSs23CustomStringConvertible", "willActivate"]
 - ["PSs23CustomStringConvertible", ""]
+- ["VSs10Dictionary", "Key"]
+- ["VSs10Dictionary", "Value"]
+- ["PSs28DictionaryLiteralConvertible", "Key"]
+- ["PSs28DictionaryLiteralConvertible", "Value"]
 - ["PSs9Equatable", "awakeWithContext"]
+- ["PSs9Equatable", "contents"]
 - ["PSs9Equatable", "didDeactivate"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "totals"]
 - ["PSs9Equatable", "willActivate"]
 - ["PSs9Equatable", ""]
 - ["PSs8Hashable", "awakeWithContext"]
+- ["PSs8Hashable", "contents"]
 - ["PSs8Hashable", "didDeactivate"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "totals"]
 - ["PSs8Hashable", "willActivate"]
 - ["PSs8Hashable", ""]
+- ["PSs9Indexable", "Key"]
+- ["PSs9Indexable", "Value"]
 - ["CSo8NSObject", "AnyObject"]
-- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "awakeWithContext"]
+- ["CSo8NSObject", "contents"]
 - ["CSo8NSObject", "didDeactivate"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "totals"]
 - ["CSo8NSObject", "willActivate"]
 - ["PSo16NSObjectProtocol", "awakeWithContext"]
+- ["PSo16NSObjectProtocol", "contents"]
 - ["PSo16NSObjectProtocol", "didDeactivate"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "totals"]
 - ["PSo16NSObjectProtocol", "willActivate"]
 - ["PSo16NSObjectProtocol", ""]
-- ["PSs21NilLiteralConvertible", "Some"]
-- ["Sq", "Some"]
-- !private ["Sq", "deinit"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "AnyObject"]
-- !private ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "String"]
+- ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "Int"]
+- ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "String"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "awakeWithContext"]
+- ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "contents"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "deinit"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "didDeactivate"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "init"]
+- ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "totals"]
 - ["C32WiseBiteSwift_WatchKit_Extension21ReportMultiController", "willActivate"]
+- ["PSs12SequenceType", "Key"]
+- ["PSs12SequenceType", "Value"]
 - ["CSo21WKInterfaceController", "AnyObject"]
-- !private ["CSo21WKInterfaceController", "String"]
+- ["CSo21WKInterfaceController", "Int"]
+- ["CSo21WKInterfaceController", "String"]
 - ["CSo21WKInterfaceController", "awakeWithContext"]
+- ["CSo21WKInterfaceController", "contents"]
 - ["CSo21WKInterfaceController", "didDeactivate"]
 - ["CSo21WKInterfaceController", "init"]
+- ["CSo21WKInterfaceController", "totals"]
 - ["CSo21WKInterfaceController", "willActivate"]
 - ["CSo21WKInterfaceController", ""]
-- ["PSs12_Reflectable", "Some"]
+- ["PSs21_ObjectiveCBridgeable", "Key"]
+- ["PSs21_ObjectiveCBridgeable", "Value"]
+- ["PSs12_Reflectable", "Key"]
+- ["PSs12_Reflectable", "Value"]
 depends-nominal:
 - "PSs9AnyObject"
 - "PSs11CVarArgType"
+- "PSs14CollectionType"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- "VSs10Dictionary"
+- "PSs28DictionaryLiteralConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
+- "PSs9Indexable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "PSs21NilLiteralConvertible"
-- "Sq"
 - "C32WiseBiteSwift_WatchKit_Extension21ReportMultiController"
+- "PSs12SequenceType"
 - "CSo21WKInterfaceController"
+- "PSs21_ObjectiveCBridgeable"
 - "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
@@ -95,4 +138,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreLocation.swiftmodule"
-interface-hash: "03deecd1d44709e353128675bedcfe66"
+interface-hash: "18b7a360e6933782880f1a0b2a4decc1"

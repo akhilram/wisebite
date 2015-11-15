@@ -1,0 +1,74 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ItemRowController"
+provides-nominal:
+- "C32WiseBiteSwift_WatchKit_Extension17ItemRowController"
+provides-member:
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", ""]
+provides-dynamic-lookup:
+- "label"
+- "ndbNo"
+depends-top-level:
+- "String"
+- "NSObject"
+- "StringLiteralType"
+- "ItemRowController"
+- "WKInterfaceLabel"
+depends-member:
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "label"]
+- ["PSs9AnyObject", "ndbNo"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "label"]
+- ["PSs11CVarArgType", "ndbNo"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "label"]
+- ["PSs23CustomStringConvertible", "ndbNo"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "label"]
+- ["PSs9Equatable", "ndbNo"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "label"]
+- ["PSs8Hashable", "ndbNo"]
+- ["PSs8Hashable", ""]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "String"]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "WKInterfaceLabel"]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "deinit"]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "init"]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "label"]
+- ["C32WiseBiteSwift_WatchKit_Extension17ItemRowController", "ndbNo"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "WKInterfaceLabel"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "label"]
+- ["CSo8NSObject", "ndbNo"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "label"]
+- ["PSo16NSObjectProtocol", "ndbNo"]
+- ["PSo16NSObjectProtocol", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C32WiseBiteSwift_WatchKit_Extension17ItemRowController"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/WatchKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreLocation.swiftmodule"
+interface-hash: "e5d9ac3d91717d96e9e7297f7a62033e"

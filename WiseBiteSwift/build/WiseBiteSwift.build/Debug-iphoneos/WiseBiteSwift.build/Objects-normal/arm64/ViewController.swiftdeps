@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C13WiseBiteSwift14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "ViewController"
 - "UIViewController"
