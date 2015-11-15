@@ -1,16 +1,65 @@
 import csv
 import sys
+import string
+import re
 
-def createFoodDcit(data_file, food_dict):	
-	"""This function populates a dictionary with the 'name' values from input csv. 
+complete_food_string = ""	
+transtable = {ord(c): " " for c in string.punctuation} # if c!= ','
+stopwords = []
+
+def buildStopWords(stopfile):
+	"""This function builds a stopword list from a stopwords file given as input.
+	   stopwords list is kept global.
+	   stopwords file format: one stopword per line
 	
 	Usage: 
-		f_dic = {}
-		createFoodDcit('C:\\input.csv', f_dic)
+		buildStopWords(filepath)
 	
 	Args:
-		data_file : absolute path of csv file containing data
-		food_dict : dictionary to be populated
+		stopfile : full path of stopwords file
+	
+	Returns:
+		NA 
+	"""
+	
+	global stopwords
+	stopwords = [word.strip() for word in open(stopfile).readlines()]
+	
+def preprocess(input_string, doStopWords, doPunctuation):
+	"""This function preprocess the input_string to remove punctuation and/or remove stopwords
+	
+	Usage: 
+		preprocess('this is a string', True, False)
+	
+	Args:
+		input_string : absolute path of csv file containing data
+		doStopWords : boolean to represent whether to remove stopwords
+		doPunctuation : boolean to represent whether to remove punctuations
+	
+	Returns:
+		preprocessed string 
+	"""
+	
+	new_str = input_string.lower()
+	if doPunctuation:
+		new_str = new_str.translate(transtable)
+	if doStopWords:
+		try:
+			new_str = " ".join([word for word in new_str.split() if word not in stopwords])
+		except ValueError as e:
+			new_str = ""
+	return new_str
+		
+def createFoodStringFile(data_file, output_file):
+	"""This function creates a giant string of all food items listed in data_file.
+		The food string is then written to output_file
+	
+	Usage: 
+		createFoodStringFile(data file name, output file name)
+	
+	Args:
+		data_file : full path of csv file containing data
+		output_file : name of output_file into which the food string is to be written
 	
 	Returns:
 		NA 
@@ -19,14 +68,36 @@ def createFoodDcit(data_file, food_dict):
 		Please verify the csv format.
 	"""
 	
+	food_list = []
 	with open(data_file) as csvfile:
 		reader = csv.DictReader(csvfile)
 		for row in reader:
-			food_dict[row['name'].lower()] = True
+			preprocessed_foodname = preprocess(row['name'], True, True)
+			food_list.append(preprocessed_foodname)
 
-
-
-def extractFoodItems(input_list, food_dict):
+	food_str = ",".join(food_list)
+	with open(output_file, 'w') as fout:
+		fout.write(food_str)
+					
+def isValidFood(input_string):
+	"""This function verifies whether the input string is a food item
+	
+	Usage: 
+		isfood = isValidFood('cereal', food_dict)
+	
+	Args:
+		input_string : string to be validated to be a food item
+		food_dict : dictionary containing all food items for validation
+	
+	Returns:
+		Boolean representing if the string is valid food or not 
+	"""
+	if  re.search(input_string, complete_food_string) != None:
+		return True
+	else:
+		return False
+	
+def extractFoodItems(input_list):
 	"""This function return a list of valid food items from a word list.
 	One food item may be a sequence of multiple words.
 	
@@ -47,35 +118,32 @@ def extractFoodItems(input_list, food_dict):
 	word_count = len(input_list)
 	if word_count == 0:
 		return []
-	for i in range(word_count,0,-1):
-		if " ".join(input_list[:i+1]) in food_dict: #redo
-			rest = extractFoodItems(input_list[i+1:], food_dict)
+	for i in range(word_count,-1,-1):
+		if isValidFood(" ".join(input_list[:i+1])):
+			rest = extractFoodItems(input_list[i+1:])
 			if rest == None:
 				continue
 			else:
 				return [" ".join(input_list[:i+1])] + rest
 
-'''
-def extractFoodItems(input_string, food_dict):
-	input_list = input_string.split()
-	word_count = len(input_list)
-	word_matrix = [False for i in word_count]*word_count
-	for i in range(word_count):
-		for j in range(i, word_count):
-			if " ".join(input_list[i:j+1]): 
-				word_matrix[i][j] = True		
-'''
-	
-	
-	
 def main():
-	food_dict = {}
-	data_file = "nutrition_data_clean_jm.csv"
-	createFoodDcit(data_file, food_dict)
+	global complete_food_string
+	data_file = "..\\backend python\\nutrition_data_clean_jm.csv"
+	food_str_file = "..\\backend python\\all_food.txt"
+	stop_file = "..\\backend python\\stopwords.txt"
 	
-	#food_dict = {'peanut':True, 'butter':True, 'peanut butter':True, 'peanut butter jelly':True, 'butter jelly':True, 'jelly mixed':True, 'mixed':True}
-	input_string =  sys.argv[1]#'peanut butter jelly mixed'
-	response = extractFoodItems(input_string.lower().split(), food_dict)
+	buildStopWords(stop_file)
+	try:
+		complete_food_string = open(food_str_file, 'r').read()
+		if complete_food_string.strip() == "":
+			raise ValueError('food string empty')
+	except (FileNotFoundError, ValueError) as e:
+		createFoodStringFile(data_file, food_str_file)
+		complete_food_string = open(food_str_file, 'r').read()
+		
+	input_string =  sys.argv[1] #'peanut butter jelly mixed' 
+	processed_input = preprocess(input_string, True, True)
+	response = extractFoodItems(processed_input.split())
 	food_items = " " if response == None else ",".join(response)
 	print(food_items)
 	sys.stdout.flush()
