@@ -8,30 +8,63 @@ var request = require('request');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({extended: true})); // support encoded bodies
 
-
 /* GET food listing. */
 router.get('/', function (req, res, next) {
+  //keywords is a single query. Not to be mistaken for an array of keywords.
+  var keywords = req.query.keywords;
 
-    var keywords = req.query.keywords;
-
-    // get search results each keywords in parallel
-    async.map(keywords, getFoodDetailsFromNDB,
+  //check if the query is for single item of multiple items
+  if(isSingleQuery(keywords))
+  {
+    async.map(keywords, getTypesFromKeyword,
+      function (error, results) {
+        res.send(results);
+      });
+    }
+    else{
+      // get search results each keywords in parallel
+      async.map(keywords, getTypesFromKeyword,
         function (error, results) {
-            res.send(results);
+          var ndbs = [];
+
+          for(i = 0; i < results.length; i++)
+          ndbs.push(results[i][0].ndbno)
+
+          async.map(ndbs, getDetailsFromNDB, function(err, detail_results){
+            res.send(detail_results)
+          });
         });
-});
+      }
+    });
 
-// callback to get search results
-function getFoodDetailsFromNDB(keyword, callback) {
+    //Python query parser
+    function isSingleQuery(query)
+    {
+      //TODO: call Linda's python script to determine if its single food item or multiple food items.
+      return false;
+    }
 
-    var url = 'http://api.nal.usda.gov/ndb/search?format=json&lt=f&sort=r&api_key=cK9v2xEPobkXTTEQNmvGN3ndRjuc0n6t4w2Psfj4'
-        + '&q=' + keyword;
-    console.log(url);
-    request(url, function(error, response, body) {
+    function getDetailsFromNDB(ndb, callback)
+    {
+      var url = 'http://api.nal.usda.gov/ndb/reports/?ndbno='+ndb+'&type=f&format=json&api_key=cK9v2xEPobkXTTEQNmvGN3ndRjuc0n6t4w2Psfj4';
+      //console.log(url);
+      request(url, function(error, response, body) {
+        body = JSON.parse(body);
+        callback(error, body);
+      });
+    }
+
+    // callback to get search results
+    function getTypesFromKeyword(keyword, callback) {
+
+      var url = 'http://api.nal.usda.gov/ndb/search?format=json&lt=f&sort=r&api_key=cK9v2xEPobkXTTEQNmvGN3ndRjuc0n6t4w2Psfj4'
+      + '&q=' + keyword;
+      //console.log(url);
+      request(url, function(error, response, body) {
         body = JSON.parse(body);
         callback(error, body.list.item);
-    });
-}
+      });
+    }
 
 router.get('/resolve:true', function (req, res, next) {
 
